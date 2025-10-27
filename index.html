@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Scribe Renderer Test</title>
-    <link rel="stylesheet" href="https://stephen.band/scribe/scribe-music/module.css" />
-<script type="module" src="https://stephen.band/scribe/scribe-music/module.js"></script>
+    <title>Scribe Renderer Test - JereNwa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/stephband/scribe@0.4/build/scribe-music/element.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/gh/stephband/scribe@0.4/build/scribe-music/element.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/stephband/scribe@0.4/build/fonts/bravura.css" />
   </head>
   <body>
-  <scribe-music type="sequence" clef="treble" meter="4/4" key="D">
-    0 chord Dmaj    4
-    0 F#5 0.2 1
-    0 A4  0.2 1
-    0 D4  0.2 1
-</scribe-music>
-    <scribe-music clef="bass" meter="4/4" key=D></scribe-music>
+    <script type="application/json" id="tune">{
+    "events": [
+        [0, "key", "D"],
+        [0, "meter", 4, 1],
+        [0, "note", "D4", 0.1, 1],
+        [1, "note", "F#4", 0.1, 1],
+        [2, "note", "A4", 0.1, 1]
+    ]
+  }</script>
+<scribe-music src="#tune" style="font-family: Bravura, BravuraText;"></scribe-music>
   </body>
 </html>
