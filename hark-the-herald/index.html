@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hark! The Herald Angels Sing - Scribe Renderer Test - JereNwa</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/stephband/scribe@0.4/build/scribe-music/element.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/gh/stephband/scribe@0.4/build/scribe-music/element.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/stephband/scribe@0.4/build/fonts/bravura.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script type="application/json" id="tune">
+      {
+        "events": [
+          [0, "key", "G"],
+          [0, "meter", 4, 1],
+          [0, "note", "D3", 0.1, 1],
+          [1, "note", "G3", 0.1, 1],
+          [2, "note", "G3", 0.1, 1.5],
+          [3.5, "note", "F#3", 0.1, 0.5],
+          [4, "note", "G3", 0.1, 1],
+          [5, "note", "B3", 0.1, 1],
+          [6, "note", "B3", 0.1, 1],
+          [7, "note", "A3", 0.1, 1],
+          [8, "note", "D4", 0.1, 1],
+          [9, "note", "D4", 0.1, 1],
+          [10, "note", "D4", 0.1, 1.5],
+          [11.5, "note", "C4", 0.1, 0.5],
+          [12, "note", "B3", 0.1, 1],
+          [13, "note", "A3", 0.1, 1],
+          [14, "note", "B3", 0.1, 2]
+        ]
+      }
+    </script>
+    <navigation>
+      <a href="/">Home</a> |
+      <a href="/once-in-royal-davids-city/">Once In Royal David's City</a>
+      </navigation>
+    <header>
+      <p>Hark! The Herald Angels Sing</p>
+    </header>
+    <p class="arranger">arr. Jeremiah N</p>
+    <scribe-music
+      clef="bass"
+      src="#tune"
+      style="font-family: Bravura, BravuraText"
+    ></scribe-music>
+
+    <p>
+      The music above is rendered using
+      <a href="https://github.com/stephband/scribe">Scribe</a>. To see more
+      information about Scribe, visit
+      <a href="https://stephen.band/scribe">here</a>.
+    </p>
+  </body>
+</html>

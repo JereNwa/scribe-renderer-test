@@ -1,0 +1,62 @@
+@font-face {
+  font-family: Splentino;
+  src: url(./fonts/Splentino-Regular.otf) format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Splentino;
+  src: url(./fonts/Splentino-Bold.otf) format("otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Splentino;
+  src: url(./fonts/Splentino-Italic.otf) format("otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Splentino;
+  src: url(./fonts/Splentino-BoldItalic.otf) format("otf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+  font-family: Splentino, sans-serif;
+  margin: 20px;
+  padding: 20px;
+}
+
+header p {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.arranger {
+  font-size: 18px;
+  font-style: italic;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #555555;
+}
+
+navigation {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
